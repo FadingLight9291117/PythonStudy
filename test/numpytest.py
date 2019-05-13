@@ -8,5 +8,6 @@ def numsum():
 
     return c
 
-
-print(numsum())
+a=numsum()
+print(a)
+print(type(a))
