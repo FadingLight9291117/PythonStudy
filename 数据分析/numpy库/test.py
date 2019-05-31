@@ -3,6 +3,6 @@ import numpy as np
 # b=a.tolist()
 # print(type(a))
 # print(type(b))
-a=range(10)
-b=list(a)
+a = range(10)
+b = list(a)
 print(b)
