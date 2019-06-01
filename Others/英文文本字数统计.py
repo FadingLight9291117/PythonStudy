@@ -1,4 +1,6 @@
 "统计英文文本单词个数"
+
+
 def Englishwordcount(string):
     l = ''',.?;:'"!()\n'''
     for item in l:
@@ -6,6 +8,7 @@ def Englishwordcount(string):
     b = string.split()
     print(b)
     return len(b)
+
 
     # '''数据清理'''
     # word="qwertyuiopasdfghjklzxcvbnm"
