@@ -1,3 +1,11 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "/home/clz/.local/anaconda3/bin/python"
+=======
+<<<<<<< HEAD
+    "python.pythonPath": "C:\\Users\\Fadin\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"
+=======
+    "python.pythonPath": "/usr/bin/python3"
+>>>>>>> 1a62ac363e0f299fe3b4df3427669ab8bb91732b
+>>>>>>> 9ac0fdaae7a9539a97234f19a3bca4ffe030cc88
 }

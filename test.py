@@ -1,5 +1,5 @@
-import pandas as pd
-import numpy as np
-a={'one':pd.Series([4,2]),'two':pd.Series([2,4,2])}
-b=pd.DataFrame(a)
+a = [1,2,3,4]
+b = reversed(a)
+b=list(b)
+b=sorted(b,reverse=True)
 print(b)

@@ -15,7 +15,7 @@ def writebyList():
     keys = ['a', 'b', 'c', 'd']
     data = [[1, 2, 3, 4], [5, 6, 7, 8], [11, 22, 33, 44]]
     with open('./files/CSVTest3.csv', 'w', encoding='utf8') as file:
-        writer = csv.writer(file)  # 设置待写入文件
+        writer = csv.writer(file,lineterminator='\n')  # 设置待写入文件
         writer.writerow(keys)  # 写入索引
         # writer.writerows(data)#一次写入多个数据
         for row in data:  # 一行一行写入数据
@@ -37,12 +37,16 @@ def readbyDict():
 # 以字典形式写入CSV
 def writebyDict():
     fieldname = ['a', 'b', 'c', 'd']
-    data = [{'a':1,'b':2,'c':3,'d':12},{'a':4,'b':5,'c':6,'d':21},{'a':7,'b':8,'c':9,'d':21}]
-    with open('./files/CSVTest3.csv', 'w', encoding='utf8') as file:
+    data = [{'a': 1, 'b': 2, 'c': 3, 'd': 12}, {'a': 4, 'b': 5,
+                                                'c': 6, 'd': 21}, {'a': 7, 'b': 8, 'c': 9, 'd': 21}]
+    with open('./files/CSVTest4.csv', 'w', encoding='utf8') as file:
         writer = csv.DictWriter(
-            file, fieldnames=fieldname)  # 设置读取文件同时设置域名/列索引
-        writer.writeheader()#写入头/域名/列索引
-        writer.writerows(data)#全部写入数据
+            file, fieldnames=fieldname,lineterminator='\n')  # 设置读取文件同时设置域名/列索引
+        writer.writeheader()  # 写入头/域名/列索引
+        writer.writerows(data)  # 全部写入数据
+
 
 if __name__ == "__main__":
+    # writebyList()
+    # writebyDict()
     readbyDict()
